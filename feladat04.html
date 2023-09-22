@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. feladat</title>
+</head>
+<body>
+    <label for="">Bevitelő mező szöveg kiíratása</label>
+    <input id="bevitel" type="text" placeholder="Ide írj!"oninput="bevitelKiiratas()">
+    <p id="bekezdes"></p>
+
+    <script>
+        const bevitel = document.getElementById('bevitel');
+        const bekezdes = document.getElementById('bekezdes');
+        function bevitelKiiratas(){
+            bekezdes.textContent = 'Begépelt tartalom: ' + bevitel.value;
+        }
+    </script>
+</body>
+
+</html>
